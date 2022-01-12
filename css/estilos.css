@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+    /* background-image: linear-gradient(to top, red,yellow); */
+    background-image: linear-gradient(45deg, white,rgb(138, 136, 136),rgb(66, 65, 65),black);
+    /* background-image: radial-gradient(rgb(223, 127, 63) 5%,yellow 25%,rgb(98, 229, 252)50%); */
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    
+    margin: 10px;  
+}
+
+a:hover{
+    color: white;
+    animation-name: titila;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+/* animation-delay: 10s; */     
+
+} 
+
+.ulH{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+h1{
+
+    margin-bottom: 50px;
+}
+.imagen{
+    height: 400px;
+}    
+
+.imaged:hover{
+    animation-name: crece;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}    
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:15vh ; 
+    background-color: black;
+    color: white;
+}
+
+.ulF{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.linkF{
+    margin: 10px;
+    
+}
+
+.aF{
+  color: white;  
+}
+
+
+/* Línea de tiempo // KeyFRAME */
+
+@keyframes titila{
+
+0%{
+    
+    color: aquamarine;
+}
+
+25%{
+    color: crimson;
+}
+50%{
+    color: darkmagenta;
+}
+75%{
+    color: goldenrod;
+}
+100%{
+    color: greenyellow;
+}
+
+}
+
+@keyframes crece{
+
+    0%{
+        
+        height: 425px;
+    }
+    
+    25%{
+        height: 375px;
+    }
+    50%{
+        height: 425px;
+    }
+    75%{
+        height: 375px;
+    }
+    100%{
+        height: 425px;
+    }
+    
+    }
